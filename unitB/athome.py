@@ -5,7 +5,7 @@ Unit B take-home assignment
 '''
 
 # First Script
-string = input("Enter input:")
+string = input("Enter input: ")
 print(string.isupper())
 print(string.isdigit())
 print(string.isalpha())
@@ -31,20 +31,21 @@ SBEADS = 9.20
 MBEADS = 8.52
 LBEADS = 7.98
 
-qsbeads = int(input("Enter number of small beads:"))
-qmbeads = int(input("Enter number of medium beads:"))
-qlbeads = int(input("Enter number of large beads:"))
+qsbeads = int(input("Enter number of small beads: "))
+qmbeads = int(input("Enter number of medium beads: "))
+qlbeads = int(input("Enter number of large beads: "))
 
 tsbeads = SBEADS*qsbeads
 tmbeads = MBEADS*qmbeads
 tlbeads = LBEADS*qlbeads
 total = tsbeads+tmbeads+tlbeads
 
-print("SIZE       QTY   COST PER BOX      TOTALS")
-print(f"Small       {qsbeads}           {SBEADS:.2f}       {tsbeads:.2f}")
-print(f"Medium      {qmbeads}            {MBEADS:.2f}       {tmbeads:.2f}")
-print(f"Large       {qlbeads}            {LBEADS:.2f}       {tlbeads:.2f}")
-print(f"TOTAL                              {total:.2f}") 
+print("{0:<9}{1:<6}{2:<17}{3:<5}".format("SIZE", "QTY", "COST PER BOX", "TOTALS"))
+print("{0:<10}{1:>2}{2:>15.2f}{3:>11.2f}".format("Small", qsbeads, SBEADS, tsbeads))
+print("{0:<10}{1:>2}{2:>15.2f}{3:>11.2f}".format("Medium", qmbeads, MBEADS, tmbeads))
+print("{0:<10}{1:>2}{2:>15.2f}{3:>11.2f}".format("Large", qlbeads, LBEADS, tlbeads))
+print("{0:<32}{1:.2f}".format("TOTAL", total))
+
 
 ''' 
 Execution results: 
@@ -62,13 +63,35 @@ me
 Adnwfrsmtigcmltl ifrn
 tnereffid yletelpmoc gnihtemos rof won dnA
 .~*''*~..~*''*~..~*''*~..~*''*~..~*''*~.
+Enter number of small beads: 10
+Enter number of medium beads: 9
+Enter number of large beads: 8
+SIZE     QTY   COST PER BOX     TOTALS
+Small     10           9.20      92.00
+Medium     9           8.52      76.68
+Large      8           7.98      63.84
+TOTAL                           232.52
 
-Enter number of small beads:10
-Enter number of medium beads:9
-Enter number of large beads:8
-SIZE       QTY   COST PER BOX      TOTALS
-Small       10           9.20       92.00
-Medium      9            8.52       76.68
-Large       8            7.98       63.84
-TOTAL                              232.52
-''' 
+
+Enter input: ABC123
+True
+False
+False
+Type, type, type away.
+Compile. Run. Hip hip hooray!
+No error today!
+And now
+rent
+me
+Adnwfrsmtigcmltl ifrn
+tnereffid yletelpmoc gnihtemos rof won dnA
+.~*''*~..~*''*~..~*''*~..~*''*~..~*''*~.
+Enter number of small beads: 5
+Enter number of medium beads: 10
+Enter number of large beads: 15
+SIZE     QTY   COST PER BOX     TOTALS
+Small      5           9.20      46.00
+Medium    10           8.52      85.20
+Large     15           7.98     119.70
+TOTAL                           250.90
+'''
