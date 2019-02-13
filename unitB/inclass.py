@@ -13,7 +13,7 @@ print(name)
 
 
 quote = "Believe you can and you're halfway there."
-print(quote.count('a'))
+print("QUOTE: ",quote.count('a'))
 
 first_instance = quote.find("a")
 print(first_instance)
