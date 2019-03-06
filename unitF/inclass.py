@@ -48,3 +48,30 @@ print("myList is now:",myList)
 
 if __name__ == "__main__":
     main()
+
+'''
+    Hello world
+    Help on function hello in module __main__:
+    
+    hello()
+    This function prints Hello World
+    
+
+Error: bad index number.
+
+Original ID of myInt in main is 4420023712
+Original ID of myList in main is 4455433800
+Original ID of myList's last element in main is 4420023680
+Original ID of parameter in byVal 4420023712
+ID of parameter in byVal after change 4420023936
+ID of myInt in main after call to byVal is 4420023712
+Original ID of parameter in byRef 4455433800
+Original ID of parameter's last element in byRef 4420023680
+ID of parameter in byRef after change 4455433800
+ID of parameter's last element in byRef after change 4420023904
+ID of myList in main after call to byRef is 4455433800
+ID of myList's last element in main after call to byRef is 4420023904
+myInt is now: 3
+myList is now: [0, 1, 9]
+'''
+
