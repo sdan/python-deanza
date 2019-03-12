@@ -20,7 +20,7 @@ class StateData:
 
 Cali = StateData('California', 'CA', 'West', 39250000)
 
-print(Cali.__str__())
+print(Cali)
 Cali.displayState()
 
 class StateData2:
@@ -52,4 +52,4 @@ class StateData2:
 a = StateData2()
 print(a.public)
 print(a._protected)
-print(a._StateData2__private)
+print(a.__private)
